@@ -1,5 +1,5 @@
 // SPDX-License-Identifier: MIT
-pragma solidity ^0.8.3;
+pragma solidity ^0.8.0;
 
 contract WorkshopManager {
     string public name = "Intro to ethers.js";
@@ -15,7 +15,7 @@ contract WorkshopManager {
         string author;
     }
 
-    Workshop[] workshops;
+    Workshop[] public workshops;
 
     function printName() public view returns (string memory) {
         return name;
