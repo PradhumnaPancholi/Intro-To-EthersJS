@@ -23,7 +23,12 @@ import {
   MarkdownSlideSet,
   Notes
 } from 'spectacle';
-import Slide1 from './slides/slide1';
+import Slide1 from './slides/slide1'
+import Slide2 from './slides/slide2'
+import Slide3 from './slides/slide3'
+import Slide4 from './slides/slide4'
+import Slide5 from './slides/slide5'
+import Slide6 from './slides/slide6'
 
 // const formidableLogo =
 //   'https://avatars2.githubusercontent.com/u/5078602?s=280&v=4';
@@ -55,26 +60,31 @@ const template = () => (
 );
 // SPECTACLE_CLI_TEMPLATE_END
 
-const SlideFragments = () => (
-  <>
-    <Slide>
-      <Text>This is a slide fragment.</Text>
-    </Slide>
-    <Slide>
-      <Text>This is also a slide fragment.</Text>
-      <Appear>
-        <Text>This item shows up!</Text>
-      </Appear>
-      <Appear>
-        <Text>This item also shows up!</Text>
-      </Appear>
-    </Slide>
-  </>
-);
+// const SlideFragments = () => (
+//   <>
+//     <Slide>
+//       <Text>This is a slide fragment.</Text>
+//     </Slide>
+//     <Slide>
+//       <Text>This is also a slide fragment.</Text>
+//       <Appear>
+//         <Text>This item shows up!</Text>
+//       </Appear>
+//       <Appear>
+//         <Text>This item also shows up!</Text>
+//       </Appear>
+//     </Slide>
+//   </>
+// );
 
 const Presentation = () => (
   <Deck theme={theme} template={template}>
     <Slide1 />
+    <Slide2 /> 
+    <Slide3 />
+    <Slide4 />
+    <Slide5 />
+    <Slide6 />
     {/* <Slide>
       <FlexBox height="100%">
         <SpectacleLogo size={500} />
@@ -191,6 +201,7 @@ const Presentation = () => (
       </Grid>
     </Slide>
     <SlideFragments />
+    
     <Slide>
       <CodePane language="jsx">{`
         import { createClient, Provider } from 'urql';
