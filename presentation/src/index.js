@@ -23,7 +23,8 @@ import {
   MarkdownSlideSet,
   Notes
 } from 'spectacle';
-import Slide1 from './slides/slide1';
+import Slide1 from './slides/slide1'
+import Slide2 from './slides/slide2'
 
 // const formidableLogo =
 //   'https://avatars2.githubusercontent.com/u/5078602?s=280&v=4';
@@ -75,6 +76,7 @@ const SlideFragments = () => (
 const Presentation = () => (
   <Deck theme={theme} template={template}>
     <Slide1 />
+    <Slide2 /> 
     {/* <Slide>
       <FlexBox height="100%">
         <SpectacleLogo size={500} />
